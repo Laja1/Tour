@@ -6,7 +6,7 @@ const Nav = () => {
     <div className="lg:w-[1050px] md:[800px] w-[355px]  mx-auto text-white">
           <div className="border border-white items-center flex justify-between border-1 p-2 rounded-[32px]">
               <div className="flex space-x-2">
-                  <img src={assetsLinks.logo} className="size-[26px]"/>
+                  <img src={assetsLinks.logo} className="w-42 h-10"/>
                   <p className="font-bold ">Tour</p>
               </div> 
               <div>

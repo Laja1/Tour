@@ -40,7 +40,7 @@ const Home = () => {
                     <div className="pb-20">
                         <img src={assetsLinks.phones} className="w-[850px]  h-auto"/>
                     </div>
-                    <div className="p-20">
+                    <div className="p-20 pt-20">
                         <MultipleItems />
                     </div>
                     <div className="text-center lg:pt-52 pt-20">
