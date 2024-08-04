@@ -1,0 +1,1 @@
+export { IoMdArrowUp } from "react-icons/io";

@@ -4,6 +4,8 @@ export const assetsLinks = {
     middleLogo: '/images/middleLogo.png',
     star: '/images/star.svg',
     sliderImage1: '/images/sliderImage1.png',
+    sliderImage2: '/images/sliderImage2.png',
+    sliderImage3: '/images/sliderImage3.png',
     dashboard: '/images/Dashboard.png',
     footer: '/images/footer.png'
 }
