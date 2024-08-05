@@ -18,15 +18,15 @@ const Home = () => {
       >
         <div className="min-h-screen ">
                 {/* Your content goes here */}
-                <div id="joinWaitlist" className="pt-14 pb-10"><a href='#joinWaitlist'><Nav /></a></div>
+                <div id="" className="pt-14 pb-10"><a href='#joinWaitlist'><Nav /></a></div>
           <div className="mx-auto pt-5 items-center flex flex-col">
           <p
-  className="poppins-bold text-center  font-bold text-3xl md:text-4xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-b from-[#828282] to-[#82828200]"
+  className="poppins-bold text-center  font-bold text-5xl  lg:text-6xl text-transparent bg-clip-text bg-gradient-to-b from-[#828282] to-[#82828200]"
 >
   Every Trip
 </p>
-                <p className="font-bold md:text-4xl  text-3xl lg:text-6xl text-center poppins-bold  text-white">Tells a Story.</p>
-                    <p className="visby-semibold text-center py-5  lg:text-sm text-xs text-primaryRegular  text-white max-w-xl ">
+                <p className="font-bold   text-5xl lg:text-6xl text-center poppins-bold  text-white">Tells a Story.</p>
+                    <p className="visby-regular text-center py-5  text-sm text-primaryRegular  text-white max-w-xl ">
                         Explore with ease. Tour connects you to adventures.
                         <br />Plan, discover, book all in one place.  
               <br />Your travel starts with Tour. </p>
@@ -42,12 +42,12 @@ const Home = () => {
                     <div className="lg:p-14 p-8 ">
                         <img src={assetsLinks.phones} className="w-[850px]  h-auto"/>
                     </div>
-                    <div className="py-20 pt-40">
+                    <div className="lg:py-20 py-10   lg:pt-40">
                         <MultipleItems />
                     </div>
                     <div className="text-center lg:pt-36 py-20">
                         <p className="text-3xl font-bold mx-auto text-center poppins-bold text-white  text-whtie ">The Event <br />Planner’s Dream.</p>
-                        <p className="visby-semibold text-sm mx-auto text-white">Gain insights and analytics on event attendance and <br />engagements. Plan better, grow bigger, and ensure <br />your events are always a hit.</p>
+                        <p className="visby-semibold text-sm mx-aut0 pb-10 text-white">Gain insights and analytics on event attendance and <br />engagements. Plan better, grow bigger, and ensure <br />your events are always a hit.</p>
                         <img src={assetsLinks.dashboard} className="w-[750px] h-auto" />
             </div>
             
