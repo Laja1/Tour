@@ -26,16 +26,18 @@ const Home = () => {
   Every Trip
 </p>
                 <p className="font-bold md:text-4xl  text-3xl lg:text-6xl text-center poppins-bold  text-white">Tells a Story.</p>
-                    <p className="text-center py-5  lg:text-sm text-xs text-primaryRegular  text-white max-w-xl ">
+                    <p className="visby-semibold text-center py-5  lg:text-sm text-xs text-primaryRegular  text-white max-w-xl ">
                         Explore with ease. Tour connects you to adventures.
                         <br />Plan, discover, book all in one place.  
               <br />Your travel starts with Tour. </p>
-            <div  className='py-3 relative items-center justify-center flex-col lg:space-y-0 md:space-y-0 space-y-3 lg:flex-row flex'>
-            <input placeholder="Your best email" className="border-1 border-[#ffffff50] text-primaryRegular pl-4 placeholder:text-[#8D90A5] placeholder:text-sm bg-black border  w-[350px] lg:w-[600px] rounded-full py-3"/>
+            <div className='py-3 relative items-center justify-center flex-col lg:space-y-0 md:space-y-0 space-y-3 lg:flex-row flex glow-effect rounded-full pt-1 pb-1'>
+            <input placeholder="Your best email" className="border-1 border-[#ffffff50] text-primaryRegular pl-4 placeholder:text-[#8D90A5] placeholder:text-sm bg-black border  w-[350px] lg:w-[600px] rounded-full py-3 "/>
               <div className='absolute hidden lg:flex right-0 pr-1.5'>
-                <Button label='Join waitlist' className='text-black bg-white ' /></div>
-           <div className=' flex lg:hidden '><Button label='Join waitlist' className='text-black w-[350px] bg-white '/></div>
-          
+                <Button label='Join waitlist' className='text-black bg-white  transform transition-transform duration-300 ease-in-out scale-100 hover:scale-105' /></div>
+                <div className='flex lg:hidden'>
+                <Button label='Join waitlist' className='text-black w-[350px] bg-white'/>
+              </div>
+
             </div>
                     <div className="lg:p-14 p-8 ">
                         <img src={assetsLinks.phones} className="w-[850px]  h-auto"/>
@@ -45,7 +47,7 @@ const Home = () => {
                     </div>
                     <div className="text-center lg:pt-36 py-20">
                         <p className="text-3xl font-bold mx-auto text-center poppins-bold text-white  text-whtie ">The Event <br />Planner’s Dream.</p>
-                        <p className="text-sm mx-auto text-white">Gain insights and analytics on event attendance and <br />engagements. Plan better, grow bigger, and ensure <br />your events are always a hit.</p>
+                        <p className="visby-semibold text-sm mx-auto text-white">Gain insights and analytics on event attendance and <br />engagements. Plan better, grow bigger, and ensure <br />your events are always a hit.</p>
                         <img src={assetsLinks.dashboard} className="w-[750px] h-auto" />
             </div>
             
