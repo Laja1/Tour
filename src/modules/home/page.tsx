@@ -8,31 +8,12 @@ import Footer from '../../components/shared/Footer';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
+
 const Home = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 }); // Initialize AOS with a duration of 2000ms for animations
-
-    function createStar() {
-      const star = document.createElement('div');
-      star.classList.add('star');
-      star.style.left = `${Math.random() * 100}vw`;
-      star.style.animationDuration = `${Math.random() * 3 + 2}s`;
-      star.style.opacity = `${Math.random()}`;
-      
-      const background = document.getElementById('background');
-      if (background) {
-        background.appendChild(star);
-      }
-
-      setTimeout(() => {
-        star.remove();
-      }, 5000); 
-    }
-    
-    const starInterval = setInterval(createStar, 500); 
-
-    return () => clearInterval(starInterval);
   }, []);
+    
 
   return (
     <div
@@ -74,10 +55,10 @@ const Home = () => {
             <MultipleItems />
           </div>
           <div className="text-center lg:pt-36 py-20">
-            <div className="dashboard flex flex-col items-center" data-aos="flip-down" data-aos-duration="2000">
+            <div className="dashboard flex flex-col items-center" >
               <p className="text-3xl font-bold mx-auto text-center poppins-bold text-white">The Event <br />Planner’s Dream.</p>
               <p className="visby-semibold text-sm mx-aut0 pb-10 text-white">Gain insights and analytics on event attendance and <br />engagements. Plan better, grow bigger, and ensure <br />your events are always a hit.</p>
-              <img src={assetsLinks.dashboard} className="w-[750px] h-auto" />
+              <img src={assetsLinks.dashboard} className="w-[750px] h-auto" data-aos="flip-down" data-aos-duration="3000"/>
             </div>
           </div>
           <Faq />
