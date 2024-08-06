@@ -1,9 +1,8 @@
-import React from 'react';
 import { assetsLinks } from "../../assets/assetsLinks";
 import { IoMdArrowUp } from "../../assets/react_icons";
 import { scrollToTop } from '../../utils/constants';
 
-const Footer: React.FC = () => {
+const Footer = () => {
  
 
   return (
