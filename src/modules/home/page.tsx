@@ -6,7 +6,7 @@ import MultipleItems from "../../components/shared/Slider";
 import Faq from "./Faq";
 import Footer from '../../components/shared/Footer';
 import Aos from 'aos';
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
 const Home = () => {
 
   useEffect(() => {
