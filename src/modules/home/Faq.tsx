@@ -1,6 +1,5 @@
 
 import CustomAccordion from "../../components/shared/Acc"
-import Accordion from "../../components/shared/Accordion"
 
 const Faq = () => {
   return (
