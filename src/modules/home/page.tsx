@@ -7,7 +7,7 @@ import Faq from "./Faq";
 import Footer from '../../components/shared/Footer';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-
+import {motion} from 'framer-motion'
 
 const Home = () => {
   useEffect(() => {
@@ -26,20 +26,20 @@ const Home = () => {
       }}
     >
       <div className="min-h-screen">
-        <div id="" className="pt-14 pb-10">
+        <motion.div initial={{scale:0,opacity:0}} transition={{duration:2}} animate={{scale:1,opacity:1}} id="" className="pt-14 pb-10">
           <a href='#joinWaitlist'><Nav /></a>
-        </div>
+        </motion.div>
         <div className="mx-auto pt-5 items-center flex flex-col">
-          <p className="poppins-bold text-center font-bold text-5xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-b from-[#828282] to-[#82828200]">
+          <motion.p initial={{opacity:0, y:-50}} transition={{duration:2}} animate={{opacity:1,y:0}} className="poppins-bold text-center font-bold text-5xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-b from-[#828282] to-[#82828200]">
             Every Trip
-          </p>
-          <p className="font-bold text-5xl lg:text-6xl text-center poppins-bold text-white">Tells a Story.</p>
-          <p className="visby-regular text-center py-5 text-sm text-primaryRegular text-white max-w-xl">
+          </motion.p>
+          <motion.p initial={{opacity:0, y:-50}} transition={{duration:3}} animate={{opacity:1,y:0}} className="font-bold text-5xl lg:text-6xl text-center poppins-bold text-white">Tells a Story.</motion.p>
+              <motion.p initial={{opacity:0, y:-50}} transition={{duration:3}} animate={{opacity:1,y:0}} className="visby-regular text-center py-5 text-sm text-primaryRegular text-white max-w-xl">
             Explore with ease. Tour connects you to adventures.
             <br />Plan, discover, book all in one place.
             <br />Your travel starts with Tour.
-          </p>
-          <div className='py-3 relative items-center justify-center flex-col lg:space-y-0 md:space-y-0 space-y-3 lg:flex-row flex glow-effect rounded-full pt-1 pb-1'>
+          </motion.p>
+          <motion.div initial={{opacity:0, y:-50}} transition={{duration:3}} animate={{scale:1,opacity:1,y:0}}  className='py-3 relative items-center justify-center flex-col lg:space-y-0 md:space-y-0 space-y-3 lg:flex-row flex glow-effect rounded-full pt-1 pb-1'>
             <input placeholder="Your best email" className="border-1 border-[#ffffff50] text-primaryRegular pl-4 placeholder:text-[#8D90A5] placeholder:text-sm bg-black border w-[350px] lg:w-[600px] rounded-full py-3" />
             <div className='absolute hidden lg:flex right-0 pr-1.5'>
               <Button label='Join waitlist' className='text-black bg-white transform transition-transform duration-300 ease-in-out scale-100 hover:scale-105' />
@@ -47,10 +47,10 @@ const Home = () => {
             <div className='flex lg:hidden'>
               <Button label='Join waitlist' className='text-black w-[350px] bg-white' />
             </div>
-          </div>
-          <div className="lg:p-14 p-8">
+          </motion.div>
+ <motion.div initial={{scale:0,opacity:0}} whileHover={{y:-50}} transition={{duration:2}} animate={{scale:1,opacity:1}} className="lg:p-14 p-8">
             <img src={assetsLinks.phones} className="w-[850px] h-auto" />
-          </div>
+          </motion.div>
           <div className="lg:py-20 py-10 lg:pt-40">
             <MultipleItems />
           </div>
